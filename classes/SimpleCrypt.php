@@ -16,7 +16,7 @@ class SimpleCrypt
      *
      * @return string
      */
-    public function encode($value, $key)
+    public function encrypt($value, $key)
     {
         $result = null;
         $length = strlen($value);
@@ -35,7 +35,7 @@ class SimpleCrypt
      *
      * @return mixed
      */
-    public function decode($value, $key)
+    public function decrypt($value, $key)
     {
         $result = null;
         $value = base64_decode($value);
